@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Fruita Storage Co.</title>
+        <title>HICO Storage</title>
         <meta name="Fruita Storage" content="Storage Services Fruita Colorado" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -124,3 +124,16 @@
   text-align: center;
 }
 
+.rentNow{
+  color:#c2b280;
+  background-color: rgb(255, 187, 0);
+  border-color: #c2b280;
+  font-size: large;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.productTable{
+  text-align: center;
+}

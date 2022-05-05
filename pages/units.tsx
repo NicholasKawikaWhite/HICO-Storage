@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <p>or Email: <a href = "mailto: makaiinhawaii@gmail.com">makaiinhawaii@gmail.com</a></p>
         <div className={styles.grid}>
           <a href="" className={styles.card}>
-            <h2>Basic Storage Container</h2><p>$200 per month</p>
+            <h2>Basic Storage Unit</h2><p>$200 per month</p>
             <Image src="/storage.webp" alt="fruita Storage Conatiner" width={550} height={300}/>
             <div className="centered">
             <p>Units Available: {10}</p>
@@ -26,8 +26,8 @@ const Home: NextPage = () => {
           </a>
 
           <a href="" className={styles.card}>
-            <h2>Double Storage Container</h2><p>$400 per month</p>
-            <Image src="/storage.webp" alt="fruita Storage Conatiner" width={550} height={300}/>
+            <h2>Half Storage Unit</h2><p>$115 per month</p>
+            <Image src="/storage.webp" alt="HICO half length Storage unit" width={550} height={300}/>
             <div className="centered">
             <p>Units Available: {1}</p>
             </div>
