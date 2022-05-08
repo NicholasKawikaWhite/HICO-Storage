@@ -11,12 +11,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Navbar bg="" >
     <Container>
     <Navbar.Brand href="/">
-<Image src='/canyon.png' alt='fruita stroage company' width={180} height={50}/>
+<Image src='/hico.png' alt='Hico stroage company' width={180} height={50}/>
   </Navbar.Brand>
     <Nav className="me-auto">
-      <Nav.Link href="/">Pricing</Nav.Link>
       <Nav.Link href="/units">Rent a Unit</Nav.Link>
-      <Nav.Link href="#pricing">About Us</Nav.Link>
+      <Nav.Link href="/contact">Contact Us</Nav.Link>
     </Nav>
     </Container>
   </Navbar>

@@ -1,16 +1,19 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Script from "next/script"
-import styles from '../styles/Specs.module.css'
-import {Button, Nav} from 'react-bootstrap'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import Script from "next/script";
+import styles from "../styles/Specs.module.css";
+import { Button, Nav } from "react-bootstrap";
 
-const Home: NextPage = () => {
+const Specs: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>HICO Storage</title>
-        <meta name="Fruita Storage" content="Storage Services Fruita Colorado" />
+        <title>Fruita Storage Co.</title>
+        <meta
+          name="Fruita Storage"
+          content="Storage Services Fruita Colorado"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Script
@@ -19,42 +22,47 @@ const Home: NextPage = () => {
       ></Script>
 
       <main className={styles.main}>
-      <figure>
+        <div className={styles.grid}>
+          <div className={styles.card}>
+          <figure>
               <model-viewer
-                style={{ width: "380px", height: "550px" }}
+                style={{ width: "500px", height: "500px" }}
                 loading="eager"
                 auto-rotate-delay="1000"
-                camera-orbit="0 80deg 0"
+                camera-orbit="60deg 80deg 0"
                 interaction-prompt="none"
                 rotation-per-second="200%"
                 camera-controls
                 environment-image="neutral"
                 disable-zoom
+                bounds="tight"
+                ar-scale="auto"
                 shadow-intensity="0.6"
-                src="../blockO.glb"
+                src="../colorized.glb"
               ></model-viewer>
             </figure>
-          <div className={styles.grid}>
-
-<div className={styles.card}>
-    <h1>Storage Unit Specifications</h1>
-    <ul>
-    <li><p>Dimentions: <ul><li>Length: 20ft</li> <li>Width: 8ft</li> <li>Height: 8ft</li></ul></p></li>
-    <li><p>Volume: 1280 cubic feet</p></li>
-    <li><p>Air Conditioned: No</p></li>
-    <li><p>Floor-Material: Wood</p></li>
-    <li><p>Exterior Color: Tan</p></li>
-    <li><p>Floor: Wood</p></li>
-    </ul>
-
-
-
-        </div>
+          </div>
+        
+          <div className={styles.card}>
+            <h1>Storage Unit Specifications</h1>
+            <ul>
+              <li>Dimensions:</li>
+              <li>Lenght: 20ft</li><li>Height: 8ft</li><li>Width: 8ft</li>
+              <li>Floor-Material: Hardwood</li>
+              <li>Interior: Painted</li>
+              <li>Security: 5-lock-points</li>
+              <li>Air-Conitioning: None</li>
+            </ul>
+            <div className="centered">
+            <Button href="/contact">
+              Rent Now
+            </Button>
+            </div>
+          </div>
         </div>
       </main>
-
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Specs;
